@@ -1,25 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta http-equiv="X-UA-Compatible" content="ie=edge">
- <title>Login Register</title>
- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
- <link rel="stylesheet" 
- href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
- <style>
-  html{
-   padding:50px;
-  }
- </style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Password Protected page</title>
+<script type="text/javascript">
+var s ="";
+
+while (s!= "mypassword")
+{
+s=prompt("please enter your password");
+if (s=="mypassword")
+{
+window.location.href="correct.html"; //page to redirect if password entered is correct
+
+}
+else
+{
+alert("Incorrect password-Try again");
+
+}
+}
+</script>
 </head>
+
 <body>
- <div class="container">
-  <div class="jumbotron text-center">
-   <a href="views/login" class="btn btn-lg btn-success">Login</a>
-   <a href="views/signup" class="btn btn-lg btn-info">Register</a>
-  </div>
- </div>
 </body>
 </html>
